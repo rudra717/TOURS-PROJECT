@@ -1,0 +1,11 @@
+<?php
+
+include 'connectdb.php';
+
+$eadd=$_POST['eadd'];
+$psw=$_POST['psw'];
+
+$query="INSERT INTO admindb VALUES('$eadd','$psw')";
+mysqli_query($conn,$query);
+
+?>

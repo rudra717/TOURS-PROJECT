@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+		.jumbotron{ 
+        	margin-top: 70px;
+        }
+        body{
+			background: url("images/photo1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;  
+			color: white;
+		}
+		h1{
+			text-align: center;
+			padding-top: 10%;
+			font-size: 5.0em;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="home.html" class="navbar-brand"><span class="glyphicon glyphicon-road"></span> RDN TOUR</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="About-us.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="signpage.html"><img src="icons\icons8-add-user-male-26.png"> Sign Up</a></li>
+					<!-- <li><a href="login.html"><img src="icons\icons8-enter-26.png"> Login</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Welcome to User Login Page</h1>
+			</div>
+		</div>
+		<form action="uprocess.php" method="POST">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" name="psw" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+	</form>
+	</div>
+<script src="js\jquery-2.1.4.js"></script>
+<script src="js\bootstrap.min.js"></script>
+</body>
+</html>
